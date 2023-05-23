@@ -1,6 +1,6 @@
 {
-  "name": "@gethinode/child",
-  "version": "0.8.2",
+  "name": "@gethinode/leaflet-demo",
+  "version": "1.0.0",
   "description": "Hinode is a clean blog theme for Hugo, an open-source static site generator",
   "main": "index.js",
   "scripts": {
@@ -47,6 +47,7 @@
     "eslint-plugin-promise": "^6.1.1",
     "flexsearch": "^0.7.31",
     "hugo-bin": "^0.102.2",
+    "leaflet": "^1.9.4",
     "markdownlint-cli2": "^0.7.1",
     "postcss-cli": "^10.1.0",
     "purgecss-whitelister": "^2.4.0",
