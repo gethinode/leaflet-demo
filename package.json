@@ -40,7 +40,6 @@
   "homepage": "https://gethinode.com",
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^5.0.0",
-    "bootstrap": "^5.3.0",
     "eslint": "^8.45.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.27.5",
