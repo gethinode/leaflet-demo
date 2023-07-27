@@ -30,7 +30,7 @@ jobs:
             by [create-pull-request](https://github.com/peter-evans/create-pull-request).\
             \
             Changes to go.mod:\
-            $(git diff --unified=0 go.mod | grep '^[+-]' | grep -Ev '^(--- a/|\+\+\+ b/)' | cut -d' ' -f1 -f2)"
+            $(npm run mod:update 2>&1 >/dev/null)"
           echo "pr_body=$pr_body" >> $GITHUB_OUTPUT
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
