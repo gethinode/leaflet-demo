@@ -28,8 +28,8 @@ jobs:
         run: |
           pr_body="This PR is auto-generated on $(date +%d-%m-%Y) \
             by [create-pull-request](https://github.com/peter-evans/create-pull-request).\
-            
-            Changes to go.mod:
+            \
+            Changes to go.mod:\
             $(git diff --unified=0 go.mod | grep '^[+-]' | grep -Ev '^(--- a/|\+\+\+ b/)' | cut -d' ' -f1 -f2)"
           echo "pr_body=$pr_body" >> $GITHUB_OUTPUT
       - name: Create Pull Request
